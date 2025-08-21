@@ -1,0 +1,9 @@
+footer {
+    background: var(--page-color-body);
+    padding: 30px 100px;
+}
+footer .footer_copy {
+    letter-spacing: 0.01em;
+    color: var(--page-color-white);
+    font-size: 13px;
+}

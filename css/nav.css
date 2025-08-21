@@ -1,0 +1,94 @@
+nav {
+    z-index: 1000;
+    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
+    background-color: #0000;
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    inset: 0% 0% auto;
+    color: var(--page-color-white);
+}
+.nav_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+.logo {
+    font-size: 26px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.nav_popup_toggle {
+    position: absolute;
+    right: 30px;
+    width: 3rem;
+    height: 17px;
+    cursor: pointer;
+}
+.nav_popup_toggle p {
+    transform-origin: top left;
+    will-change: transform, opacity;
+    position: absolute;
+}
+#nav_popup_close {
+    opacity: 0;
+    transform: translateX(-5px) translateY(10px) rotate(5deg);
+}
+
+.nav_popup {
+    position: fixed;
+    width: 100vw;
+    height: 100svh;
+    background-color: #0f0f0f;
+    z-index: 1;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+}
+.nav_popup_content {
+    width: 100%;
+    height: 100%;
+    transform-origin: left bottom;
+    will-change: transform, opacity;
+}
+.menu {
+    gap: 30px;
+    height: 100%;
+    color: var(--page-color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    padding-right: 150px;
+}
+.menu li {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.menu li a {
+    font-size: 84px;
+    font-weight: 800;
+    text-transform: uppercase;
+    position: relative;
+    transform: translateY(120%);
+    opacity: 0.25;
+    display: inline-block;
+    will-change: transform;
+}
+.menu li a::after {
+    position: absolute;
+    content: "";
+    top: calc(50% - 5px);
+    left: 0;
+    width: 100%;
+    height: 10px;
+    border-radius: 50px;
+    background: var(--page-color-point);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s cubic-bezier(0.6, 0, 0.4, 1);
+}
+.menu li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
