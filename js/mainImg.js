@@ -1,4 +1,4 @@
-gsap.from(".pickle_img", {
+gsap.from(".main_img", {
     duration: 2,
     delay: 1,
     opacity: 0,

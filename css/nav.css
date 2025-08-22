@@ -67,7 +67,6 @@ nav {
 }
 .menu li a {
     font-size: 84px;
-    font-weight: 800;
     text-transform: uppercase;
     position: relative;
     transform: translateY(120%);

@@ -4,6 +4,7 @@
 @import "reset.css";
 @import "nav.css";
 @import "main.css";
+@import "sub.css";
 @import "footer.css";
 
 /* ------------ font ------------ */
@@ -84,10 +85,6 @@ body {
     overflow-x: hidden;
     font-size: 16px;
     background-color: var(--page-color-body);
-}
-main {
-}
-main section {
 }
 
 /* ------------ 미디어쿼리 ------------ */

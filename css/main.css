@@ -13,11 +13,13 @@
     text-transform: uppercase;
     z-index: 2;
 }
-.pickle_img {
-    background: #fff;
+.main_img {
     border-radius: 32px;
     overflow: hidden;
     height: calc(100vh - 130px);
+}
+.pickle_img {
+    background: #fff;
     position: relative;
 }
 .pickle_img img {
