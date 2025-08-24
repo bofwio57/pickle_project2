@@ -29,7 +29,6 @@ gsap.timeline({
         start: "top 100%",
         end: "20% 100%",
         scrub: 2,
-        markers: true,
     },
 })
     .to(".act_list li:nth-child(1)", { y: "-40px", duration: 1, ease: "none" }, 0.2)
