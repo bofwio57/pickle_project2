@@ -134,7 +134,7 @@ header .main_tit {
 }
 .plan_list li p {
     color: var(--page-color-white);
-    font-size: 18px;
-    margin-top: 10px;
+    font-size: 23px;
+    margin-top: 20px;
     text-align: center;
 }
