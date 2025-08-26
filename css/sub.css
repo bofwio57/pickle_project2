@@ -143,11 +143,8 @@ header .main_tit {
 #practice .container {
     padding: 80px 0;
 }
-.practice_items {
-}
 .practice_item {
     position: relative;
-    /* height: 100vh; */
     height: 440px;
     display: flex;
     justify-content: center;
@@ -161,7 +158,6 @@ header .main_tit {
     width: 90%;
     height: 90%;
     display: flex;
-    /* overflow: hidden; */
 }
 .practice_item .img_area img {
     width: 100%;
@@ -192,4 +188,79 @@ header .main_tit {
 .practice_item .txt_area .name {
     font-size: 70px;
     font-weight: 800;
+}
+
+/* ------------ arduino ------------ */
+#arduino {
+}
+#arduino .container {
+}
+#arduino .arduino_area {
+    /* black */
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: calc(100vh - 160px);
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+#arduino .txt_items {
+    /* text-wrap */
+    position: relative;
+    overflow: hidden;
+    width: 450px;
+    height: 750px;
+}
+#arduino .txt_item {
+    /* panel-text */
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+    transform: translateY(100%);
+    opacity: 0;
+    margin-top: -40px;
+}
+#arduino .txt_item p {
+    color: var(--page-color-white);
+}
+
+#arduino .video_items {
+    /* p-wrap */
+    position: relative;
+    overflow: hidden;
+    width: 450px;
+    height: 750px;
+}
+#arduino .video_item {
+    /* panel */
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: var(--page-color-body);
+    overflow: hidden;
+}
+#arduino .video_box {
+    z-index: auto;
+}
+#arduino .video_box video {
+    object-fit: cover;
+    border-radius: 24px;
 }
