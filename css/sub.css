@@ -191,12 +191,7 @@ header .main_tit {
 }
 
 /* ------------ arduino ------------ */
-#arduino {
-}
-#arduino .container {
-}
 #arduino .arduino_area {
-    /* black */
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -211,14 +206,12 @@ header .main_tit {
     align-items: center;
 }
 #arduino .txt_items {
-    /* text-wrap */
     position: relative;
     overflow: hidden;
     width: 450px;
     height: 750px;
 }
 #arduino .txt_item {
-    /* panel-text */
     position: absolute;
     left: 0%;
     top: 0%;
@@ -238,14 +231,12 @@ header .main_tit {
 }
 
 #arduino .video_items {
-    /* p-wrap */
     position: relative;
     overflow: hidden;
     width: 450px;
     height: 750px;
 }
 #arduino .video_item {
-    /* panel */
     position: absolute;
     left: 0%;
     top: 0%;
@@ -262,5 +253,58 @@ header .main_tit {
 }
 #arduino .video_box video {
     object-fit: cover;
+    border-radius: 24px;
+}
+
+/* ------------ report ------------ */
+#report .container {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+}
+#report .container > div {
+    flex: 1;
+}
+#report .txt_area {
+    color: var(--page-color-white);
+}
+#report .txt_area .emp {
+    font-size: 40px;
+    color: var(--page-color-point);
+    font-weight: 800;
+    margin-bottom: 70px;
+}
+#report .txt_area p {
+    line-height: 1.3;
+}
+.bown_btn {
+    border: 1px solid #ddd;
+    padding: 6px 15px 6px;
+    border-radius: 24px;
+    font-size: 13px;
+    line-height: 1;
+    transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+    display: inline-block;
+}
+.bown_btn:hover {
+    border-color: var(--page-color-point);
+    background: var(--page-color-point);
+    color: #000;
+}
+.bown_btn a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.bown_btn span {
+    font-variation-settings: "wght" 200;
+    font-size: 20px;
+}
+#report .img_area img {
+    width: 100%;
+    height: 100%;
     border-radius: 24px;
 }
