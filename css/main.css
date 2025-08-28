@@ -1,4 +1,5 @@
-#home {
+html {
+    display: none;
 }
 #home .container {
     padding: 65px;

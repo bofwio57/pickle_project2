@@ -1,16 +1,21 @@
 header {
     position: relative;
 }
-header .container {
-    padding: 65px;
-}
 header .main_tit {
     color: #fff;
 }
-.sub_page .main_img {
+.sub_page header .container {
+    overflow: hidden;
     position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 32px;
+    margin: 65px;
+    height: calc(100vh - 130px);
 }
-.sub_page .main_img::after {
+.sub_page header .container::after {
     content: "";
     width: 100%;
     height: 100%;
@@ -20,10 +25,6 @@ header .main_tit {
     top: 0;
     left: 0;
     z-index: 0;
-}
-.sub_page .main_img img {
-    width: 100%;
-    height: 100%;
 }
 .sub_page section {
     min-height: 100vh;
@@ -44,6 +45,9 @@ header .main_tit {
 }
 
 /* ------------ about ------------ */
+#aboutus_page header .container {
+    background-image: url(/img/about01.jpg);
+}
 #purpose .txt_area {
     color: var(--page-color-white);
     text-align: center;
@@ -106,6 +110,9 @@ header .main_tit {
 }
 
 /* ------------ businessplan ------------ */
+#businessplan_page header .container {
+    background-image: url(/img/business01.jpg);
+}
 .plan_list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -140,6 +147,9 @@ header .main_tit {
 }
 
 /* ------------ music ------------ */
+#music_page header .container {
+    background-image: url(/img/music01.jpg);
+}
 #practice .container {
     padding: 80px 0;
 }
@@ -191,6 +201,9 @@ header .main_tit {
 }
 
 /* ------------ arduino ------------ */
+#arduino_page header .container {
+    background-image: url(/img/arduino01.jpg);
+}
 #arduino .arduino_area {
     display: -webkit-box;
     display: -webkit-flex;
@@ -257,6 +270,9 @@ header .main_tit {
 }
 
 /* ------------ report ------------ */
+#report_page header .container {
+    background-image: url(/img/report01.jpg);
+}
 #report .container {
     height: 600px;
     display: flex;

@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     const container = document.querySelector("main");
+    const nav = document.querySelector("nav");
     const navPopupToggle = document.querySelector(".nav_popup_toggle");
     const navPopup = document.querySelector(".nav_popup");
     const navPopupContent = document.querySelector(".nav_popup_content");
@@ -48,6 +49,13 @@ document.addEventListener("DOMContentLoaded", () => {
     function openMenu() {
         if (isAnimating || isOpen) return;
         isAnimating = true;
+
+        //nav bar
+        gsap.to(nav, {
+            background: "var(--page-color-body)",
+            duration: 1.25,
+            ease: "power4.inOut",
+        });
 
         //회전 & 이동 & 확대
         gsap.to(container, {
