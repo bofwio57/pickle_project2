@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     const container = document.querySelector("main");
+    const mainContainer = document.querySelector(".sub_page header .container");
     const nav = document.querySelector("nav");
     const navPopupToggle = document.querySelector(".nav_popup_toggle");
     const navPopup = document.querySelector(".nav_popup");
@@ -52,7 +53,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
         //nav bar
         gsap.to(nav, {
-            background: "var(--page-color-body)",
+            backgroundColor: "var(--page-color-body)",
+            duration: 1.25,
+            ease: "power4.inOut",
+        });
+
+        //sub_page header container
+        gsap.to(mainContainer, {
+            marginTop: 0,
             duration: 1.25,
             ease: "power4.inOut",
         });
@@ -103,6 +111,21 @@ document.addEventListener("DOMContentLoaded", () => {
     function closeMenu() {
         if (isAnimating || !isOpen) return;
         isAnimating = true;
+
+        //nav bar
+        gsap.to(nav, {
+            backgroundColor: "#0000",
+            duration: 1.25,
+            ease: "power4.inOut",
+        });
+
+        //sub_page header container
+        gsap.to(mainContainer, {
+            marginTop: "65px",
+            duration: 2,
+            ease: "power4.inOut",
+        });
+
         gsap.to(container, {
             rotation: 0,
             x: 0,
